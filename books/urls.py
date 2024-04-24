@@ -1,6 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import BookViewSet, RecommendationViewSet
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 router = DefaultRouter()
 router.register(r'books', BookViewSet)
